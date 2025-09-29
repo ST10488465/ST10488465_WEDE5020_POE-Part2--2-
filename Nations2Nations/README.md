@@ -1,40 +1,16 @@
 Table of content
 Table of Contents
-Organization Overview	3
-Website goals and objectives	4
-KPI’s	4
-Features and functionality	4
-Design and user experience	5
-Technical requirements	7
-Timeline	7
-Budget	8
-References	8
+Organization Overview	
+Website goals and objectives	
+KPI’s	
+Features and functionality	
+Design and user experience	
+Technical requirements	
+Timeline	
+Budget	
+References	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#GitHub Link: https://github.com/ST10488465/ST10488465_WEDE5020_POE-Part2--2-
 
 Proposal Content 2
 
