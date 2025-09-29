@@ -225,24 +225,24 @@ Item	Budget
 
 
 
-Organization Overview
+## Organization Overview
 
 Name: CustomPrints
 
 History: Printing things on products and objects has been around for many years and it all started in China around the 1900.
 
-Mission statement 
+#### Mission statement 
 
 ❖	To give people and businesses more power by making high quality, personalized printed products that spark creativity, boost brands, and brings ideas to life, one print at a time.
 
-Vision
+#### Vision
 ❖	To be one of the biggest leaders in personalized product printing, known for being innovative, excellent, and making custom design available to everyone.
 
-Target market
+#### Target market
 ❖	Small businesses and startups need branded goods and promotional products like pens, mugs, and t- shirts.
 ❖	Normal customers and gift givers are able to customize presents for holidays, anniversaries, and birthdays. They could be very sentimental and unforgettable presents.
 
-Website goals and objectives
+#### Website goals and objectives
 
 	Objective 1:to give thorough details regarding the selection of goods that CustomPrints  sells.
 	Goal 1: Create and implement content rich "About Us" and "Products" websites that include comprehensive descriptions of each product category, including costs, ingredients (if any), and usage guidelines.
@@ -253,14 +253,14 @@ Website goals and objectives
 
 
 
-KPI’s
+## KPI’s
 ❖	Website traffic
 ❖	Run monthly promotions and influencer campaigns to market the store.
 ❖	Gain a very strong following on Instagram and Tiktok following. Around 10 000 followers in the first year
 ❖	I would like the website to generate at least R20 000 - R50 000 in revenue within the first year.
 ❖	Achieve 1500 sales within 6 months after the launch of the store.
 
-Features and functionality
+#### Features and functionality
 
 1. Home Page
 •	Logo, slogan, and top navigation
@@ -292,13 +292,13 @@ Shared Across All Pages
 •	SEO optimization
 •	Social media integration
 
-Design and user experience
+#### Design and user experience
 
-Colour scheme: I am going to use red and white.
+#### Colour scheme: I am going to use red and white.
 
-Typography: I am going to use open-sans and sans-serif to give the website a more aesthetic look.
+#### Typography: I am going to use open-sans and sans-serif to give the website a more aesthetic look.
 
-Layout and design
+#### Layout and design
 ❖	Simple, present day, and minimalistic
 ❖	Uses white and red to convey clarity and trust
 ❖	A welcoming atmosphere with rounded components
@@ -314,24 +314,24 @@ User experience consideration
 ❖	Have safe and secure payment options
 ❖	Show estimated delivery times by location
 
-Wireframes
+#### Wireframes
 
  
 
 
 
-Technical requirements
+#### Technical requirements
 
 ❖	Domain: https//: Nations2Nations . com
 ❖	Fast performance 
 ❖	SSL and email included
 
-Programming languages and frameworks
+#### Programming languages and frameworks
 ❖	HTML, CSS, and JavaScript
 ❖	For database i will use MySQL
 ❖	For Payments i will use PayPal, Credit/Debit cards
 
-Timeline
+#### Timeline
 
 
  
@@ -342,7 +342,7 @@ Timeline
 
 
 
-Budget
+#### Budget
 
 
 Item	Budget
