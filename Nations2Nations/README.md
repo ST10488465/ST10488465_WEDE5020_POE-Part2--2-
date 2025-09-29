@@ -10,7 +10,7 @@ Timeline
 Budget	
 References	
 
-#GitHub Link: https://github.com/ST10488465/ST10488465_WEDE5020_POE-Part2--2-
+# GitHub Link: https://github.com/ST10488465/ST10488465_WEDE5020_POE-Part2--2-
 
 Proposal Content 2
 
@@ -25,22 +25,22 @@ Mission
 ❖	To provide high-quality fashion, beauty, and tech products to customers worldwide.
 ❖	Encouraging self-expression, creativity, and self-assurance with each purchase.
 
-Statement
+## Statement
 
 ❖	To become the world’s leading global retail platform
 ❖	Where technology, beauty, and style from every country come together to serve every nation
 
-Target Audience
+## Target Audience
 
 I have two types of target audiences
 
-Primary Target Audience
+#### Primary Target Audience
 1. Millennials and Gen Z (Ages 18–35)
 ❖	Why: They are trend-driven, tech-savvy, appearance conscious, and most frequent online shoppers
 ❖	What they want: Affordable, fashionable apparel; hair care products for a range of textures; and personal technology
 ❖	Where they are: Tiktok, Instagram, Youtube and online shopping store
 
-Secondary Target Audience
+#### Secondary Target Audience
 
 2. Value-Conscious Online Shoppers (Ages 25–45)
 
@@ -50,7 +50,7 @@ Secondary Target Audience
 
 
 
-Website goals and objectives
+## Website goals and objectives
 
 I have four main goals that I would like to achieve with my retail store website.
 
@@ -67,7 +67,7 @@ Objective 3: Use discounts, promotions, and an easy checkout procedure to entice
 Goal 4: To enhance customer service by responding to all inquiries from clients within the day.
 
 
-Key performance indicators(KPI’s)
+## Key performance indicators(KPI’s)
 
 
              Area	               KPI	              Target
@@ -83,64 +83,64 @@ Key performance indicators(KPI’s)
 
 
 
-Website features and functionalities
+## Website features and functionalities
 
 There are multiple feature and functionality ideas for my website, Nations2Nations.
 
-Products
+#### Products
 ❖	Categories: Clothing, hair, and technology.
 ❖	Prices, description, images, and sizes.
 
-Checkout and shopping cart
+#### Checkout and shopping cart
 ❖	Each product has an Add to Cart button.
 ❖	View the cart page to see the final cost.
 ❖	Secure checkout with payment options and shipping details.
 ❖	Guest Checkout: No account creation is required to make a purchase.
 
-Payment integration
+#### Payment integration
 ❖	Allow EFT, credit/debit cards, and mobile wallets(Paypal, e.t.c)
 ❖	If in South Africa, display the currency in Rands(ZAR)
 ❖	Send emails confirming the order
 
-Account for users
+#### Account for users
 ❖	Make an account/ Login/ Logout
 ❖	Track orders, see order history, and save favourites(wishlist)
 
-Shipping and delivery
+#### Shipping and delivery
 ❖	Display the estimate delivery times
 ❖	Options for shipping: Regular or Express
 ❖	Accept tracking numbers and SMS or email status updates
 
-Mobile response
+#### Mobile response
 ❖	Quick loading, simple navigation with touch support
 
-Contact and support
+#### Contact and support
 ❖	A contact us page with phone number, form or whatsapp link
 
-Ratings and reviews
+#### Ratings and reviews
 ❖	Allow customers to give reviews and rate the goods
 ❖	On product pages, display the average star ratings
 
-Promotions 
+#### Promotions 
 ❖	Banner advertisements promoting sales or new goods
 
-Security Features
+#### Security Features
 ❖	Use SSL encryption (https://) for secure browsing
 ❖	Protect customer info and payment details
 
-Design and User Experience
+#### Design and User Experience
 
 I have a few ideas regarding my design and user experience. I am going to discuss the colour scheme, typography, user experience considerations, and layout and design.
 
-Colour scheme
+## Colour scheme
 
 ❖	I am going to use mainly white and blue for the background
 
-Typography
+#### Typography
 ❖	For the logo/headlines I am going to use Sans-serif Fonts because it is modern and clean
 ❖	For the main body text or description I am going to use Roboto to make it look more digital
 
-Layout and design
+#### Layout and design
 
 ❖	Simple, present day, and minimalistic
 ❖	Uses white and blue to convey clarity and trust
@@ -149,7 +149,7 @@ Layout and design
 ❖	Search bar, Account, Cart icons and logo
 ❖	Category-based navigation menu
 
-User experience consideration
+#### User experience consideration
 ❖	Have a clear menu structure
 ❖	A single click “add to cart” 
 ❖	Persistent shopping cart(incase users leave the site and want to come back)
@@ -158,7 +158,7 @@ User experience consideration
 ❖	Have safe and secure payment options
 ❖	Show estimated delivery times by location
 
-Wireframes
+## Wireframes
  
 
 
@@ -177,20 +177,20 @@ Wireframes
 
 
 
-Technical requirements
+## Technical requirements
 
 ❖	Domain: https//: Nations2Nations . com
 ❖	Fast performance 
 ❖	SSL and email included
 
-Programming languages and frameworks
+#### Programming languages and frameworks
 ❖	HTML, CSS, and JavaScript
 ❖	For database i will use MySQL
 ❖	For Payments i will use PayPal, Credit/Debit cards
 
 
 
-Timeline
+## Timeline
  
 
 Week	Description	Task
@@ -211,7 +211,7 @@ Week 8
 
 
 
-Budget
+## Budget
 
 
 Item	Budget
@@ -220,7 +220,7 @@ Item	Budget
 ●	SSL Certificate	R500
 ●	Payment gateway	R500
 ●	Marketing	R1000-R5000
-Sitemap
+## Sitemap
  
 
 
