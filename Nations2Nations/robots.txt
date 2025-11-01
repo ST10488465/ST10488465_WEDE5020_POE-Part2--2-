@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nations2nations.com/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Allow search engines to crawl CSS and JS
+Allow: /css/
+Allow: /js/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
