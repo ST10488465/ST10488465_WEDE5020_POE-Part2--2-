@@ -364,6 +364,175 @@ Mobile
 
 ![alt text](Mobiless.png)
 
+# Change Log
+
+## JavaScript Enhancements & Interactive Features
+### 2.1 Interactive Elements Implementation
+- Lightbox Gallery
+
+- Created interactive image lightbox for gallery.html
+
+- Click-to-enlarge functionality for product images
+
+- Close button and overlay click to exit
+
+- Smooth transitions and animations
+
+- Interactive Maps
+
+- Integrated Leaflet.js maps for contact page
+
+- Cape Town and Johannesburg store locations
+
+- Custom markers with store information popups
+
+- Responsive map containers
+
+- Animations & Transitions
+
+- CSS animations for cart notifications
+
+- Smooth hover effects on product cards
+
+- Transition effects for interactive elements
+
+- DOM Manipulation
+
+- Dynamic content loading capabilities
+
+- Real-time cart updates
+
+- Search and filter functionality
+
+### 2.2 Dynamic Content Features
+- Product Search & Filter
+
+- Real-time product searching
+
+- Category-based filtering (Technology, Clothing, Hair Products)
+
+- Combined search and filter functionality
+
+- Shopping Cart System
+
+- Add to cart buttons on all products
+
+- Persistent shopping cart
+
+- Cart total calculation
+
+- Checkout simulation
+
+- Accordion Product Categories
+
+- Collapsible product sections
+
+- Smooth expand/collapse animations
+
+- Mobile-friendly category navigation
+
+### 3.1 On-Page SEO Implementation
+- Keyword Research & Integration
+
+- Primary keywords: "fashion South Africa", "beauty products", "technology gadgets"
+
+- Secondary keywords: "online shopping", "clothing", "hair care", "electronics"
+
+- Natural keyword integration in content
+
+- Meta Tags Optimization
+
+- Unique title tags for each page
+
+- Compelling meta descriptions (150-160 characters)
+
+- Keyword-optimized meta tags
+
+- Canonical URLs implementation
+
+- Header Tags Structure
+
+- Proper H1-H6 hierarchy implementation
+
+- Semantic HTML structure
+
+- Keyword-rich heading content
+
+- Image Optimization
+
+- SEO-friendly file naming (hyphenated, descriptive)
+
+- Comprehensive alt text for all images
+
+- Lazy loading implementation
+
+- Proper image dimensions
+
+- URL Structure
+
+- Clean, descriptive URLs
+
+- Proper file naming conventions
+
+- Canonical tag implementation
+
+- Internal Linking
+
+- Consistent navigation across all pages
+
+- Contextual internal links
+
+- Breadcrumb-ready structure
+
+- Mobile-Friendliness
+
+- Responsive design implementation
+
+- Mobile-first CSS approach
+
+- Touch-friendly interactive elements
+
+### 3.2 Technical SEO Configuration
+- Robots.txt Creation
+
+- Search engine crawling instructions
+
+- Sitemap reference
+
+- Disallowed directories
+
+- Crawl delay settings
+
+- Sitemap.xml Generation
+
+- Complete website structure mapping
+
+- Priority and change frequency settings
+
+- Last modification dates
+
+- XML format compliance
+
+- Performance Optimization
+
+- Image lazy loading
+
+- CSS and JavaScript optimization
+
+- Reduced layout shifts
+
+- Font optimization
+
+- Security Implementation
+
+- Security headers configuration
+
+- XSS prevention measures
+
+-  Form validation security
+
+- HTTPS readiness
+
 References
 ❖	blog.converted.in. (2022). 8 Ways To Determine Ecommerce Target Audience For Your Store. [online] Available at: https://blog.converted.in/en-us/blog/8-ways-to-determine-ecommerce-target-audience-for-your-store.
 ❖	AgencyAnalytics. (n.d.). 12 Ecommerce Goals That Drive Client Success. [online] Available at: https://agencyanalytics.com/blog/ecommerce-goals.

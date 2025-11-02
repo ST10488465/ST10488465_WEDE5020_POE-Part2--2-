@@ -10,20 +10,15 @@
   <meta name="keywords" content="contact us, store locations, Cape Town, Johannesburg, customer service">
   <link rel="canonical" href="https://nations2nations.com/contact.html">
   <link rel="stylesheet" href="styles.css" />
-  
-  <!-- Leaflet CSS for maps -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
-        crossorigin=""/>
+  <script src="script.js" defer></script>
+
 </head>
 
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <img src="_images/N2N_Logo.png" alt="Nations2Nations Logo" />
+        <img src="_images/N2N_Logo.png" alt="N2N Logo" />
         <h1>From Every Nation, For Every Generation</h1>
       </div>
       <nav>
@@ -38,7 +33,7 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main>
     <h1 class="page-title">Contact Us</h1>
 
     <div class="contact-container">
@@ -55,7 +50,6 @@
           <li><strong>Email:</strong> Ojbenyera@gmail.com</li>
           <li><strong>Instagram:</strong> @Nations2Nations</li>
           <li><strong>Facebook:</strong> Nations2Nations</li>
-          <li><strong>WhatsApp:</strong> 062 435 1234</li>
         </ul>
       </div>
 
@@ -66,109 +60,23 @@
           <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
           <li><strong>Saturday:</strong> 9:00 AM - 4:00 PM</li>
           <li><strong>Sunday:</strong> 10:00 AM - 2:00 PM</li>
-          <li><strong>Public Holidays:</strong> 10:00 AM - 3:00 PM</li>
         </ul>
-
-        <!-- Contact Form -->
-        <h3>Send us a Message</h3>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Your Name *</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Your Phone</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
-              <option value="">Select a subject</option>
-              <option value="general">General Inquiry</option>
-              <option value="products">Product Information</option>
-              <option value="order">Order Support</option>
-              <option value="wholesale">Wholesale Inquiry</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message *</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
       </div>
     </div>
 
     <section>
       <h2 class="section-title">Our Locations</h2>
-      <p>Visit us at any of our conveniently located stores in Cape Town and Johannesburg.</p>
-      
       <div class="locations">
         <div class="location">
-          <h3>Cape Town Store</h3>
-          <div class="location-info">
-            <p><strong>Address:</strong> 123 Main Street, Cape Town City Center, 8001</p>
-            <p><strong>Phone:</strong> 062 435 1234</p>
-            <p><strong>Email:</strong> capetown@nations2nations.com</p>
-          </div>
-          <!-- Interactive Map for Cape Town -->
-          <div class="map-container">
-            <div id="capeTownMap" class="interactive-map"></div>
-            <div class="map-links">
-              <a href="https://maps.google.com/?q=123+Main+Street+Cape+Town+City+Center" target="_blank" class="map-link">
-                Open in Google Maps
-              </a>
-            </div>
-          </div>
+          <h3>Cape Town</h3>
+          <p>123 Main Street, Cape Town City Center</p>
+          <img src="_images/Screenshot 2025-08-27 130708.png" alt="Cape Town Location" class="location-image" />
         </div>
 
         <div class="location">
-          <h3>Johannesburg Store</h3>
-          <div class="location-info">
-            <p><strong>Address:</strong> 456 Business Avenue, Sandton, Johannesburg, 2196</p>
-            <p><strong>Phone:</strong> 062 435 1235</p>
-            <p><strong>Email:</strong> johannesburg@nations2nations.com</p>
-          </div>
-          <!-- Interactive Map for Johannesburg -->
-          <div class="map-container">
-            <div id="johannesburgMap" class="interactive-map"></div>
-            <div class="map-links">
-              <a href="https://maps.google.com/?q=456+Business+Avenue+Sandton+Johannesburg" target="_blank" class="map-link">
-                Open in Google Maps
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Additional Contact Methods -->
-    <section>
-      <h2 class="section-title">Other Ways to Connect</h2>
-      <div class="contact-methods">
-        <div class="contact-method">
-          <h3>Live Chat</h3>
-          <p>Chat with us directly during business hours</p>
-          <button class="chat-btn" id="liveChatBtn">Start Live Chat</button>
-        </div>
-        <div class="contact-method">
-          <h3>Social Media</h3>
-          <p>Follow us for updates and promotions</p>
-          <div class="social-links">
-            <a href="https://instagram.com/Nations2Nations" class="social-link" target="_blank">Instagram</a>
-            <a href="https://facebook.com/Nations2Nations" class="social-link" target="_blank">Facebook</a>
-            <a href="https://tiktok.com/@Nations2Nations" class="social-link" target="_blank">TikTok</a>
-          </div>
-        </div>
-        <div class="contact-method">
-          <h3>WhatsApp Business</h3>
-          <p>Message us directly on WhatsApp</p>
-          <a href="https://wa.me/27624351234" class="whatsapp-btn" target="_blank">Message on WhatsApp</a>
+          <h3>Johannesburg</h3>
+          <p>456 Business Avenue, Sandton, Johannesburg</p>
+          <img src="_images/Screenshot 2025-08-27 130544.png" alt="Johannesburg Location" class="location-image" />
         </div>
       </div>
     </section>
@@ -190,15 +98,7 @@
       </p>
     </div>
   </footer>
-
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-          crossorigin=""></script>
   
-  <script src="js/main.js"></script>
-  <script src="js/forms.js"></script>
-  <script src="js/contact.js"></script>
-</body>
+
 
 </html>
