@@ -1,150 +1,67 @@
-// This is to add the shopping cart functionality.
+// Shopping cart functionality
 let shoppingCart = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    // This is to add search and filter functionality.
+    // Add search and filter functionality
     addSearchFilter();
-    
-    // This is to add accordion functionality to categories
-    addAccordions();
     
     // Add cart functionality
     addCartFunctionality();
 });
 
 function addSearchFilter() {
-    // Create search and filter elements
-    const searchContainer = document.createElement('div');
-    searchContainer.className = 'search-filter-container';
-    searchContainer.innerHTML = `
-        <input type="text" id="productSearch" placeholder="Search products...">
-        <select id="categoryFilter">
-            <option value="all">All Categories</option>
-            <option value="technology">Technology</option>
-            <option value="clothing">Clothing</option>
-            <option value="hair">Hair Products</option>
-        </select>
-        <button id="filterBtn">Filter</button>
-    `;
-    
-    // Insert before the main content
-    const main = document.querySelector('main');
-    main.insertBefore(searchContainer, main.firstChild);
-    
-    // This code is for the search filter functionality
     const filterBtn = document.getElementById('filterBtn');
     const searchInput = document.getElementById('productSearch');
     const categoryFilter = document.getElementById('categoryFilter');
     
-    filterBtn.addEventListener('click', filterProducts);
-    searchInput.addEventListener('keyup', filterProducts);
-    categoryFilter.addEventListener('change', filterProducts);
+    if (filterBtn && searchInput && categoryFilter) {
+        filterBtn.addEventListener('click', filterProducts);
+        searchInput.addEventListener('keyup', filterProducts);
+        categoryFilter.addEventListener('change', filterProducts);
+    }
 }
 
 function filterProducts() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const category = categoryFilter.value;
-    const products = document.querySelectorAll('main h3');
+    const searchTerm = document.getElementById('productSearch').value.toLowerCase();
+    const category = document.getElementById('categoryFilter').value;
+    const products = document.querySelectorAll('.product-card');
     
     products.forEach(product => {
-        const productText = product.textContent.toLowerCase();
-        const productSection = product.closest('h1, h2').textContent.toLowerCase();
+        const productName = product.querySelector('.product-name').textContent.toLowerCase();
+        const productDescription = product.querySelector('.product-description').textContent.toLowerCase();
+        const productCategory = product.dataset.category;
         
-        let matchesSearch = productText.includes(searchTerm);
-        let matchesCategory = category === 'all' || 
-            (category === 'technology' && productSection.includes('technology')) ||
-            (category === 'clothing' && productSection.includes('clothing')) ||
-            (category === 'hair' && productSection.includes('hair'));
+        let matchesSearch = productName.includes(searchTerm) || productDescription.includes(searchTerm);
+        let matchesCategory = category === 'all' || category === productCategory;
         
-        const productContainer = product.parentElement;
         if (matchesSearch && matchesCategory) {
-            productContainer.style.display = 'block';
+            product.style.display = 'block';
         } else {
-            productContainer.style.display = 'none';
-        }
-    });
-}
-
-function addAccordions() {
-    // This is the code to convert product categories to accordions
-    const categories = document.querySelectorAll('main h1');
-    
-    categories.forEach(category => {
-        if (category.textContent === 'Technology' || 
-            category.textContent === 'Clothing' || 
-            category.textContent === 'Hair Products') {
-            
-            //The accordion button
-            const accordionBtn = document.createElement('button');
-            accordionBtn.className = 'accordion-btn';
-            accordionBtn.innerHTML = `${category.textContent} <span class="accordion-icon">+</span>`;
-            
-            //This is the accordion content container
-            const accordionContent = document.createElement('div');
-            accordionContent.className = 'accordion-content';
-            
-            // This code moves all content until next h1 into accordion content
-            let nextElement = category.nextElementSibling;
-            while (nextElement && nextElement.tagName !== 'H1') {
-                const temp = nextElement;
-                nextElement = nextElement.nextElementSibling;
-                accordionContent.appendChild(temp);
-            }
-            
-            // Replace category with accordion structure
-            category.parentNode.insertBefore(accordionBtn, category);
-            category.parentNode.insertBefore(accordionContent, accordionBtn.nextSibling);
-            category.remove();
-            
-            // Add click event to toggle accordion
-            accordionBtn.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const content = this.nextElementSibling;
-                const icon = this.querySelector('.accordion-icon');
-                
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                    icon.textContent = '+';
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                    icon.textContent = '-';
-                }
-            });
+            product.style.display = 'none';
         }
     });
 }
 
 function addCartFunctionality() {
-    //This is the code to add "Add to Cart" buttons to products
-    const products = document.querySelectorAll('main h3');
+    // Add "Add to Cart" buttons to products
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
     
-    products.forEach(product => {
-        const priceElement = product.nextElementSibling;
-        if (priceElement && priceElement.textContent.includes('Price:')) {
-            const addToCartBtn = document.createElement('button');
-            addToCartBtn.className = 'add-to-cart';
-            addToCartBtn.textContent = 'Add to Cart';
-            addToCartBtn.dataset.product = product.textContent;
-            addToCartBtn.dataset.price = priceElement.textContent.replace('Price: ', '').replace('R', '');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productName = this.dataset.product;
+            const productPrice = parseFloat(this.dataset.price);
             
-            priceElement.parentNode.insertBefore(addToCartBtn, priceElement.nextSibling);
-            
-            addToCartBtn.addEventListener('click', function() {
-                const productName = this.dataset.product;
-                const productPrice = parseFloat(this.dataset.price);
-                
-                shoppingCart.push({
-                    name: productName,
-                    price: productPrice
-                });
-                
-                updateCartDisplay();
-                showCartNotification(productName);
+            shoppingCart.push({
+                name: productName,
+                price: productPrice
             });
-        }
+            
+            updateCartDisplay();
+            showCartNotification(productName);
+        });
     });
     
-    //cart display code.
+    // Create cart display
     const cartContainer = document.createElement('div');
     cartContainer.id = 'cart-container';
     cartContainer.innerHTML = `
@@ -155,7 +72,7 @@ function addCartFunctionality() {
     `;
     document.body.appendChild(cartContainer);
     
-    //This is the checkout functionality
+    // Add checkout functionality
     document.getElementById('checkout-btn').addEventListener('click', function() {
         if (shoppingCart.length === 0) {
             alert('Your cart is empty!');
@@ -170,6 +87,8 @@ function addCartFunctionality() {
 function updateCartDisplay() {
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
+    
+    if (!cartItems || !cartTotal) return;
     
     cartItems.innerHTML = '';
     let total = 0;

@@ -10,8 +10,6 @@
   <meta name="keywords"
     content="mens clothing, womens fashion, technology products, hair care, beauty products, electronics South Africa">
   <link rel="canonical" href="https://nations2nations.com/products.html">
-
-  <!-- FIXED: Only one CSS link pointing to correct location -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,7 +22,6 @@
         <img src="_images/N2N_Logo.png" alt="Nations2Nations Logo - Quality Fashion, Beauty and Tech Products" />
         <h1>From Every Nation, For Every Generation</h1>
       </div>
-      <!--Top Navigation-->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -39,16 +36,26 @@
 
   <main id="main-content">
     <h1 class="page-title">Our Products</h1>
-    <p>Discover our wide range of high-quality products including technology gadgets, fashion clothing, and beauty
-      products for men and women.</p>
+    <p>Discover our wide range of high-quality products including technology gadgets, fashion clothing, and beauty products for men and women.</p>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter-container">
+      <input type="text" id="productSearch" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="technology">Technology</option>
+        <option value="clothing">Clothing</option>
+        <option value="hair">Hair Products</option>
+      </select>
+      <button id="filterBtn">Filter</button>
+    </div>
 
     <!-- Technology Section -->
     <section>
       <h2 class="section-title">Technology & Electronics</h2>
       <div class="products-grid">
-        <div class="product-card">
-          <img src="_images/Tripod lamp.jpg" alt="Adjustable tripod lamp for content creation and photography"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="technology">
+          <img src="_images/tripod-lamp.jpg" alt="Adjustable tripod lamp for content creation and photography" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Tripod Lamp</h3>
             <p class="product-description">
@@ -59,22 +66,18 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/Monitor.jpg" alt="Acer gaming monitor for work and entertainment - 24 inch display"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="technology">
+          <img src="_images/acer-monitor.jpg" alt="Acer gaming monitor for work and entertainment - 24 inch display" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Acer Monitor</h3>
-            <p class="product-description">High-quality 24-inch monitor perfect for gaming, work, and entertainment with
-              crisp display.</p>
+            <p class="product-description">High-quality 24-inch monitor perfect for gaming, work, and entertainment with crisp display.</p>
             <p class="product-price">R2500.00</p>
             <button class="add-to-cart" data-product="Acer Monitor" data-price="2500.00">Add to Cart</button>
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/Gaming Keyboard Aesthetic.jpg"
-            alt="RGB gaming keyboard with mechanical switches for typing and gaming" class="product-image"
-            loading="lazy" />
+        <div class="product-card" data-category="technology">
+          <img src="_images/gaming-keyboard.jpg" alt="RGB gaming keyboard with mechanical switches for typing and gaming" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Gaming Keyboard</h3>
             <p class="product-description">
@@ -85,9 +88,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/Deep purple (1).jpg" alt="Ergonomic wireless mouse for comfortable computer use"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="technology">
+          <img src="_images/wireless-mouse.jpg" alt="Ergonomic wireless mouse for comfortable computer use" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Wireless Mouse</h3>
             <p class="product-description">
@@ -98,9 +100,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/Power Bank 20000mah Batería Portátil 1hora.jpg" alt="20000mAh portable power bank for charging devices on the go"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="technology">
+          <img src="_images/power-bank.jpg" alt="20000mAh portable power bank for charging devices on the go" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Power Bank 20000mAh</h3>
             <p class="product-description">High-capacity portable power bank to charge your devices anywhere.</p>
@@ -111,14 +112,13 @@
       </div>
     </section>
 
-    <!--This is the clothing Section -->
+    <!-- Clothing Section -->
     <section>
       <h2 class="section-title">Fashion & Clothing</h2>
       <h3 class="section-subtitle">Men's Clothing</h3>
       <div class="products-grid">
-        <div class="product-card">
-          <img src="_images/blackHoodie.jpg" alt="Men's cotton hoodie in multiple colors - comfortable casual wear"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="clothing">
+          <img src="_images/mens-hoodie.jpg" alt="Men's cotton hoodie in multiple colors - comfortable casual wear" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Men's Cotton Hoodie</h3>
             <p class="product-description">
@@ -129,9 +129,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/highschoolJacket.jpg" alt="Classic highschool style jacket for men" class="product-image"
-            loading="lazy" />
+        <div class="product-card" data-category="clothing">
+          <img src="_images/highschool-jacket.jpg" alt="Classic highschool style jacket for men" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Highschool Jacket</h3>
             <p class="product-description">
@@ -145,9 +144,8 @@
 
       <h3 class="section-subtitle">Women's Clothing</h3>
       <div class="products-grid">
-        <div class="product-card">
-          <img src="_images/Summer set.jpg" alt="Women's summer clothing set for warm weather"
-            class="product-image" loading="lazy" />
+        <div class="product-card" data-category="clothing">
+          <img src="_images/womens-summer-set.jpg" alt="Women's summer clothing set for warm weather" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Women's Summer Set</h3>
             <p class="product-description">Lightweight and comfortable summer set perfect for warm weather.</p>
@@ -156,9 +154,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/floral dress.jpg" alt="Elegant floral pattern dress for women" class="product-image"
-            loading="lazy" />
+        <div class="product-card" data-category="clothing">
+          <img src="_images/floral-dress.jpg" alt="Elegant floral pattern dress for women" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Floral Dress</h3>
             <p class="product-description">Elegant and comfortable floral dress perfect for various occasions.</p>
@@ -169,14 +166,13 @@
       </div>
     </section>
 
-    <!-- This is the hair Products Section -->
+    <!-- Hair Products Section -->
     <section>
       <h2 class="section-title">Beauty & Hair Products</h2>
       <h3 class="section-subtitle">Men's Products</h3>
       <div class="products-grid">
-        <div class="product-card">
-          <img src="_images/The ABCD's Of Maintaining A Super Low Haircut  _ Essence.jpg"
-            alt="Wave styling cream for men's hair care" class="product-image" loading="lazy" />
+        <div class="product-card" data-category="hair">
+          <img src="_images/wave-cream.jpg" alt="Wave styling cream for men's hair care" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Wave Cream</h3>
             <p class="product-description">
@@ -187,9 +183,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="_images/3pcs Silky Durag with Wave Brush for Men 360, Curved Medium_Hard Hair Brush Kits,C.jpg"
-            alt="Complete wave maintenance kit with durag and brush" class="product-image" loading="lazy" />
+        <div class="product-card" data-category="hair">
+          <img src="_images/wave-kit.jpg" alt="Complete wave maintenance kit with durag and brush" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Wave Kit</h3>
             <p class="product-description">
@@ -203,9 +198,8 @@
 
       <h3 class="section-subtitle">Women's Products</h3>
       <div class="products-grid">
-        <div class="product-card">
-          <img src="_images/1pc Wig Spray Bottle.jpg" alt="Hair styling spray bottle for women" class="product-image"
-            loading="lazy" />
+        <div class="product-card" data-category="hair">
+          <img src="_images/spray-bottle.jpg" alt="Hair styling spray bottle for women" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Styling Spray Bottle</h3>
             <p class="product-description">Professional spray bottle for easy hair styling and maintenance.</p>
@@ -214,10 +208,8 @@
           </div>
         </div>
 
-        <div class="product-card">
-          <img
-            src="_images/SIQUK 6 Pieces Hair Brush Comb Set Paddle Brush Detangle Hair Brush and Black Combs for Men and Women Wet, Dry, Curly and Straight Hair.jpg"
-            alt="6-piece hair brush and comb set for all hair types" class="product-image" loading="lazy" />
+        <div class="product-card" data-category="hair">
+          <img src="_images/hair-styling-kit.jpg" alt="6-piece hair brush and comb set for all hair types" class="product-image" loading="lazy" />
           <div class="product-info">
             <h3 class="product-name">Hair Styling Kit</h3>
             <p class="product-description">
@@ -233,7 +225,6 @@
 
   <footer>
     <div class="footer-container">
-      <!--This is the bottom navigation-->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
